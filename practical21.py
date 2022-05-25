@@ -1,0 +1,6 @@
+print("Enter the Name of a File to Read: ", end="")
+fileName = input()
+fileHandle = open(fileName, "rt")
+content = fileHandle.read()
+words = content.split()
+print('Number of words in text file :', len(words))
